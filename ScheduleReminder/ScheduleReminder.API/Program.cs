@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
+using ScheduleReminder.Core.Repositories;
 using ScheduleReminder.Data;
+using ScheduleReminder.Data.Repositories;
 
 namespace ScheduleReminder.API
 {
@@ -13,6 +15,7 @@ namespace ScheduleReminder.API
 
             builder.Services.AddControllers();
             builder.Services.AddDbContext<DataContext>(opt => opt.UseSqlServer(builder.Configuration.GetConnectionString("default")));
+            builder.Services.AddScoped<IReminderRepository, ReminderRepository>();
 
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();

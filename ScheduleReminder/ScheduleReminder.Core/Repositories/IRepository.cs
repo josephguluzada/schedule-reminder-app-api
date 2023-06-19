@@ -2,7 +2,7 @@
 
 namespace ScheduleReminder.Core.Repositories;
 
-public interface IRepository<TEntity> where TEntity : class, new()
+public interface IRepository<TEntity> where TEntity : class
 {
     Task InsertAsync(TEntity entity);
     Task<TEntity> GetAsync(Expression<Func<TEntity, bool>> expression);
@@ -10,5 +10,5 @@ public interface IRepository<TEntity> where TEntity : class, new()
     Task<IEnumerable<TEntity>> GetAllPagenatedAsync(Expression<Func<TEntity, bool>> expression, int pageIndex, int pageSize);
     Task<int> GetTotalCountAsync(Expression<Func<TEntity, bool>> expression);
     void Remove(TEntity entity);
-
+    Task<int> CommitAsync();
 }
