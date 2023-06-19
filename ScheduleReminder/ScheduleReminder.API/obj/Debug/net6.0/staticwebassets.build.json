@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "OWzHj53WvO3TrF1r9GJZmoMMpl4FzVvpL77ne1eLRSM=",
+  "Source": "ScheduleReminder.API",
+  "BasePath": "_content/ScheduleReminder.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
