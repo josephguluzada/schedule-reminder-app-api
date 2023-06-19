@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScheduleReminder.Core", "ScheduleReminder.Core\ScheduleReminder.Core.csproj", "{9A86C873-389B-4F19-8CC4-C15095238AE1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ScheduleReminder.Core", "ScheduleReminder.Core\ScheduleReminder.Core.csproj", "{9A86C873-389B-4F19-8CC4-C15095238AE1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScheduleReminder.Data", "ScheduleReminder.Data\ScheduleReminder.Data.csproj", "{04255905-34B8-4CEF-B9D0-5B24F6F9D45C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ScheduleReminder.Data", "ScheduleReminder.Data\ScheduleReminder.Data.csproj", "{04255905-34B8-4CEF-B9D0-5B24F6F9D45C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScheduleReminder.API", "ScheduleReminder.API\ScheduleReminder.API.csproj", "{3DA0CBEF-5F68-4BE9-BE2E-7FD06BA53693}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ScheduleReminder.API", "ScheduleReminder.API\ScheduleReminder.API.csproj", "{3DA0CBEF-5F68-4BE9-BE2E-7FD06BA53693}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D5BBF4A7-C3D5-491D-8B20-6B933DE336FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScheduleReminder.Service", "ScheduleReminder.Service\ScheduleReminder.Service.csproj", "{0E181576-0289-408F-8D44-A728DEB25099}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +31,10 @@ Global
 		{3DA0CBEF-5F68-4BE9-BE2E-7FD06BA53693}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3DA0CBEF-5F68-4BE9-BE2E-7FD06BA53693}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3DA0CBEF-5F68-4BE9-BE2E-7FD06BA53693}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E181576-0289-408F-8D44-A728DEB25099}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E181576-0289-408F-8D44-A728DEB25099}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E181576-0289-408F-8D44-A728DEB25099}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E181576-0289-408F-8D44-A728DEB25099}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -37,6 +43,7 @@ Global
 		{9A86C873-389B-4F19-8CC4-C15095238AE1} = {D5BBF4A7-C3D5-491D-8B20-6B933DE336FC}
 		{04255905-34B8-4CEF-B9D0-5B24F6F9D45C} = {D5BBF4A7-C3D5-491D-8B20-6B933DE336FC}
 		{3DA0CBEF-5F68-4BE9-BE2E-7FD06BA53693} = {D5BBF4A7-C3D5-491D-8B20-6B933DE336FC}
+		{0E181576-0289-408F-8D44-A728DEB25099} = {D5BBF4A7-C3D5-491D-8B20-6B933DE336FC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AA7E6FAB-5883-43CC-83F1-7E58D99A9187}

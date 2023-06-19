@@ -142,3 +142,10 @@ C:\Users\asus\Desktop\schedule-reminder-app\ScheduleReminder\ScheduleReminder.AP
 C:\Users\asus\Desktop\schedule-reminder-app\ScheduleReminder\ScheduleReminder.API\obj\Debug\net6.0\ScheduleReminder.API.pdb
 C:\Users\asus\Desktop\schedule-reminder-app\ScheduleReminder\ScheduleReminder.API\obj\Debug\net6.0\ScheduleReminder.API.genruntimeconfig.cache
 C:\Users\asus\Desktop\schedule-reminder-app\ScheduleReminder\ScheduleReminder.API\obj\Debug\net6.0\ref\ScheduleReminder.API.dll
+C:\Users\asus\Desktop\schedule-reminder-app\ScheduleReminder\ScheduleReminder.API\bin\Debug\net6.0\ScheduleReminder.Service.dll
+C:\Users\asus\Desktop\schedule-reminder-app\ScheduleReminder\ScheduleReminder.API\bin\Debug\net6.0\ScheduleReminder.Service.pdb
+C:\Users\asus\Desktop\schedule-reminder-app\ScheduleReminder\ScheduleReminder.API\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\asus\Desktop\schedule-reminder-app\ScheduleReminder\ScheduleReminder.API\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\asus\Desktop\schedule-reminder-app\ScheduleReminder\ScheduleReminder.API\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\asus\Desktop\schedule-reminder-app\ScheduleReminder\ScheduleReminder.API\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+C:\Users\asus\Desktop\schedule-reminder-app\ScheduleReminder\ScheduleReminder.API\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll

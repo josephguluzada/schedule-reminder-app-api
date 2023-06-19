@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\asus\\Desktop\\schedule-reminder-app\\ScheduleReminder\\ScheduleReminder.Data\\ScheduleReminder.Data.csproj": {
-                "projectPath": "C:\\Users\\asus\\Desktop\\schedule-reminder-app\\ScheduleReminder\\ScheduleReminder.Data\\ScheduleReminder.Data.csproj"
+              "C:\\Users\\asus\\Desktop\\schedule-reminder-app\\ScheduleReminder\\ScheduleReminder.Service\\ScheduleReminder.Service.csproj": {
+                "projectPath": "C:\\Users\\asus\\Desktop\\schedule-reminder-app\\ScheduleReminder\\ScheduleReminder.Service\\ScheduleReminder.Service.csproj"
               }
             }
           }
@@ -182,6 +182,75 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.18, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\asus\\Desktop\\schedule-reminder-app\\ScheduleReminder\\ScheduleReminder.Service\\ScheduleReminder.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\asus\\Desktop\\schedule-reminder-app\\ScheduleReminder\\ScheduleReminder.Service\\ScheduleReminder.Service.csproj",
+        "projectName": "ScheduleReminder.Service",
+        "projectPath": "C:\\Users\\asus\\Desktop\\schedule-reminder-app\\ScheduleReminder\\ScheduleReminder.Service\\ScheduleReminder.Service.csproj",
+        "packagesPath": "C:\\Users\\asus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\asus\\Desktop\\schedule-reminder-app\\ScheduleReminder\\ScheduleReminder.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\asus\\Desktop\\schedule-reminder-app\\ScheduleReminder\\ScheduleReminder.Data\\ScheduleReminder.Data.csproj": {
+                "projectPath": "C:\\Users\\asus\\Desktop\\schedule-reminder-app\\ScheduleReminder\\ScheduleReminder.Data\\ScheduleReminder.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
             }
           },
           "imports": [

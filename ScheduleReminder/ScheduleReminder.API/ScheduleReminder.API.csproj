@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ScheduleReminder.Data\ScheduleReminder.Data.csproj" />
+    <ProjectReference Include="..\ScheduleReminder.Service\ScheduleReminder.Service.csproj" />
   </ItemGroup>
 
 </Project>
