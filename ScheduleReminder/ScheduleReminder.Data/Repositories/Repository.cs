@@ -23,9 +23,9 @@ public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
         return await _dataContext.Set<TEntity>().Where(expression).ToListAsync();
     }
 
-    public async Task<IEnumerable<TEntity>> GetAllPagenatedAsync(Expression<Func<TEntity, bool>> expression, int pageIndex, int pageSize)
+    public IQueryable<TEntity> GetAllPagenatedAsync(Expression<Func<TEntity, bool>> expression, int pageIndex, int pageSize)
     {
-        return await _dataContext.Set<TEntity>().Where(expression).Skip((pageIndex-1)*pageSize).Take(pageSize).ToListAsync();
+        return _dataContext.Set<TEntity>().Where(expression).Skip((pageIndex - 1) * pageSize).Take(pageSize);
     }
 
     public async Task<TEntity> GetAsync(Expression<Func<TEntity, bool>> expression)

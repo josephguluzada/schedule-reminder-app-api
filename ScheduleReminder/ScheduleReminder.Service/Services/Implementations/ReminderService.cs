@@ -41,7 +41,7 @@ public class ReminderService : IReminderService
     {
         var reminder = await _reminderRepository.GetAsync(x => x.Id == id);
 
-        if (reminder == null) throw new ReminderNotFoundException("Reminder not found");
+        if (reminder == null) throw new ReminderNotFoundException($"Reminder with id: {id} not found!");
 
         reminder.SendAt = reminderPostDto.SendAt;
         reminder.To = reminderPostDto.To;
@@ -51,13 +51,13 @@ public class ReminderService : IReminderService
         await _reminderRepository.CommitAsync();
     }
 
-    public async Task<PagenatedListDto<ReminderListItemDto>> GetAllFiltered(int page, string method)
+    public async Task<PagenatedListDto<ReminderListItemDto>> GetAllFiltered(int page, string? method)
     {
         if (page < 1) throw new PageIndexFormatException("Page index cannot be below 1");
         
-        IEnumerable<Reminder> reminders = await _reminderRepository.GetAllPagenatedAsync(x => string.IsNullOrWhiteSpace(method) ? true : x.Method.ToLower() == method.ToLower(),page,10);
+        IQueryable<Reminder> reminders = _reminderRepository.GetAllPagenatedAsync(x => string.IsNullOrWhiteSpace(method) ? true : x.Method.ToLower() == method.ToLower(),page,10);
 
-        int totalCount = await _reminderRepository.GetTotalCountAsync(x => x.Method.ToLower() == method.ToLower());
+        int totalCount = await _reminderRepository.GetTotalCountAsync(x => string.IsNullOrWhiteSpace(method) ? true : x.Method.ToLower() == method.ToLower());
 
         List<ReminderListItemDto> itemDtos = _mapper.Map<List<ReminderListItemDto>>(reminders);
 
@@ -79,12 +79,11 @@ public class ReminderService : IReminderService
         return reminderDtos;
     }
 
-
     public async Task<ReminderDetailDto> GetByIdAsync(int id)
     {
         var reminder = await _reminderRepository.GetAsync(x=> x.Id == id);
 
-        if (reminder == null) throw new ReminderNotFoundException($"{id} ID-li Reminder not found!");
+        if (reminder == null) throw new ReminderNotFoundException($"Reminder with id: {id} not found!");
 
         return _mapper.Map<ReminderDetailDto>(reminder);
     }

@@ -22,14 +22,8 @@ namespace ScheduleReminder.API.Controllers
             return Ok(201);
         }
 
-        //[HttpGet("")]
-        //public async Task<IActionResult> GetAll()
-        //{
-        //    return Ok(await _reminderService.GetAllAsync());
-        //}
-
         [HttpGet("")]
-        public async Task<IActionResult> GetAll(string method, int page = 1) 
+        public async Task<IActionResult> GetAll(string? method, int page = 1) 
         { 
             return Ok(await _reminderService.GetAllFiltered(page, method));
         }
