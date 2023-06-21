@@ -6,7 +6,7 @@ namespace ScheduleReminder.Service.Services.Interfaces;
 
 public interface IReminderService
 {
-    Task CreateAsync(ReminderPostDto reminderPostDto);
+    Task<int> CreateAsync(ReminderPostDto reminderPostDto);
     Task<ReminderDetailDto> GetByIdAsync(int id);
     Task<IEnumerable<ReminderListItemDto>> GetAllAsync();
     Task<PagenatedListDto<ReminderListItemDto>> GetAllFiltered(int page, string method);

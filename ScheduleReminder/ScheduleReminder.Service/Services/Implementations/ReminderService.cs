@@ -19,12 +19,14 @@ public class ReminderService : IReminderService
         _mapper = mapper;
     }
 
-    public async Task CreateAsync(ReminderPostDto reminderPostDto)
+    public async Task<int> CreateAsync(ReminderPostDto reminderPostDto)
     {
         var reminder = _mapper.Map<Reminder>(reminderPostDto);
 
         await _reminderRepository.InsertAsync(reminder);
         await _reminderRepository.CommitAsync();
+
+        return reminder.Id;
     }
 
     public async Task Delete(int id)

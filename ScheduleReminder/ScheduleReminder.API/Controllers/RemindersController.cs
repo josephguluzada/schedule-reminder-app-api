@@ -1,5 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Hangfire;
+using Microsoft.AspNetCore.Mvc;
 using ScheduleReminder.Service.Dtos.ReminderDtos;
+using ScheduleReminder.Service.Helpers;
+using ScheduleReminder.Service.Jobs.Interfaces;
 using ScheduleReminder.Service.Services.Interfaces;
 
 namespace ScheduleReminder.API.Controllers
@@ -9,16 +12,23 @@ namespace ScheduleReminder.API.Controllers
     public class RemindersController : ControllerBase
     {
         private readonly IReminderService _reminderService;
+        private readonly ISendMailJob<MailAndTelegramSender> _sendMailJob;
 
-        public RemindersController(IReminderService reminderService)
+        public RemindersController(IReminderService reminderService, ISendMailJob<MailAndTelegramSender> sendMailJob)
         {
             _reminderService = reminderService;
+            _sendMailJob = sendMailJob;
         }
 
         [HttpPost]
         public async Task<IActionResult> Create(ReminderPostDto reminderPostDto)
         {
-            await _reminderService.CreateAsync(reminderPostDto);
+            var reminderId = await _reminderService.CreateAsync(reminderPostDto);
+
+            var reminder = await _reminderService.GetByIdAsync(reminderId);
+
+            _sendMailJob.SendMail(reminder.SendAt,reminder.To,reminder.Content);
+
             return Ok(201);
         }
 

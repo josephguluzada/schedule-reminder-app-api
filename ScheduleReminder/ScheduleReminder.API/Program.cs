@@ -1,10 +1,13 @@
 using FluentValidation.AspNetCore;
+using Hangfire;
 using Microsoft.EntityFrameworkCore;
 using ScheduleReminder.API.ServiceExtensions;
 using ScheduleReminder.Core.Repositories;
 using ScheduleReminder.Data;
 using ScheduleReminder.Data.Repositories;
 using ScheduleReminder.Service.Dtos.ReminderDtos;
+using ScheduleReminder.Service.Jobs.Implementations;
+using ScheduleReminder.Service.Jobs.Interfaces;
 using ScheduleReminder.Service.Services.Implementations;
 using ScheduleReminder.Service.Services.Interfaces;
 
@@ -18,6 +21,8 @@ namespace ScheduleReminder.API
 
             // Add services to the container.
 
+            builder.Services.AddHangfire(x => x.UseSqlServerStorage(builder.Configuration.GetConnectionString("hangfireDb")));
+            builder.Services.AddHangfireServer();
             builder.Services.AddControllers()
                    .AddFluentValidation(x=> x.RegisterValidatorsFromAssemblyContaining<ReminderPostDtoValidator>());
                    
@@ -28,6 +33,7 @@ namespace ScheduleReminder.API
 
             builder.Services.AddScoped<IReminderRepository, ReminderRepository>();
             builder.Services.AddScoped<IReminderService, ReminderService>();
+            builder.Services.AddSingleton(typeof(ISendMailJob<>),typeof(SendMailJob<>));
 
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
@@ -43,6 +49,8 @@ namespace ScheduleReminder.API
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+
+            app.UseHangfireDashboard("/mydashboard");
 
             // Global exception handler.
             app.AddGlobalExceptionHandlerService();
