@@ -33,4 +33,9 @@ public class MailAndTelegramSender : IBaseJob
             smtp.Send(message);
         }
     }
+
+    public void SendTelegram(string to, string content)
+    {
+
+    }
 }

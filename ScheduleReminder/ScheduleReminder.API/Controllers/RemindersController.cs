@@ -12,12 +12,12 @@ namespace ScheduleReminder.API.Controllers
     public class RemindersController : ControllerBase
     {
         private readonly IReminderService _reminderService;
-        private readonly ISendMailJob<MailAndTelegramSender> _sendMailJob;
+        private readonly IReminderJob<MailAndTelegramSender> _reminderJob;
 
-        public RemindersController(IReminderService reminderService, ISendMailJob<MailAndTelegramSender> sendMailJob)
+        public RemindersController(IReminderService reminderService, IReminderJob<MailAndTelegramSender> sendMailJob)
         {
             _reminderService = reminderService;
-            _sendMailJob = sendMailJob;
+            _reminderJob = sendMailJob;
         }
 
         [HttpPost]
@@ -27,7 +27,7 @@ namespace ScheduleReminder.API.Controllers
 
             var reminder = await _reminderService.GetByIdAsync(reminderId);
 
-            _sendMailJob.SendMail(reminder.SendAt,reminder.To,reminder.Content);
+            _reminderJob.Remind(reminder.SendAt,reminder.To,reminder.Content,reminder.Method);
 
             return Ok(201);
         }
