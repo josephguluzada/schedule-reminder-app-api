@@ -168,3 +168,4 @@ C:\Users\asus\Desktop\schedule-reminder-app\ScheduleReminder\ScheduleReminder.AP
 C:\Users\asus\Desktop\schedule-reminder-app\ScheduleReminder\ScheduleReminder.API\bin\Debug\net6.0\tr-TR\Hangfire.Core.resources.dll
 C:\Users\asus\Desktop\schedule-reminder-app\ScheduleReminder\ScheduleReminder.API\bin\Debug\net6.0\zh-TW\Hangfire.Core.resources.dll
 C:\Users\asus\Desktop\schedule-reminder-app\ScheduleReminder\ScheduleReminder.API\bin\Debug\net6.0\zh\Hangfire.Core.resources.dll
+C:\Users\asus\Desktop\schedule-reminder-app\ScheduleReminder\ScheduleReminder.API\bin\Debug\net6.0\Telegram.Bot.dll

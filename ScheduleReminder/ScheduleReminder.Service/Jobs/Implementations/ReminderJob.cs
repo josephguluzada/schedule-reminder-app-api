@@ -13,6 +13,6 @@ public class ReminderJob<T> : IReminderJob<T> where T : IBaseJob
         if(method.ToLower() == "email")
             BackgroundJob.Schedule<T>(x=> x.SendMail(to,content), delay);
         else
-            BackgroundJob.Schedule<T>(x => x.SendTelegram(to, content), delay);
+            BackgroundJob.Schedule<T>(x => x.SendTelegram(to, content).Wait(), delay);
     }
 }

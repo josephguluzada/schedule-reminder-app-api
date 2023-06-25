@@ -11,7 +11,8 @@
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
           "FluentValidation.AspNetCore": "11.3.0",
           "Hangfire": "1.8.2",
-          "ScheduleReminder.Data": "1.0.0"
+          "ScheduleReminder.Data": "1.0.0",
+          "Telegram.Bot": "19.0.0"
         },
         "runtime": {
           "ScheduleReminder.Service.dll": {}
@@ -92,7 +93,7 @@
       },
       "Hangfire.Core/1.8.2": {
         "dependencies": {
-          "Newtonsoft.Json": "11.0.1"
+          "Newtonsoft.Json": "13.0.1"
         },
         "runtime": {
           "lib/netstandard2.0/Hangfire.Core.dll": {
@@ -441,11 +442,11 @@
           }
         }
       },
-      "Newtonsoft.Json/11.0.1": {
+      "Newtonsoft.Json/13.0.1": {
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {
-            "assemblyVersion": "11.0.0.0",
-            "fileVersion": "11.0.1.21818"
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.1.25517"
           }
         }
       },
@@ -592,6 +593,17 @@
             "assetType": "runtime",
             "assemblyVersion": "4.0.1.0",
             "fileVersion": "4.700.19.56404"
+          }
+        }
+      },
+      "Telegram.Bot/19.0.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "runtime": {
+          "lib/net6.0/Telegram.Bot.dll": {
+            "assemblyVersion": "19.0.0.0",
+            "fileVersion": "19.0.0.0"
           }
         }
       },
@@ -883,12 +895,12 @@
       "path": "microsoft.win32.systemevents/4.7.0",
       "hashPath": "microsoft.win32.systemevents.4.7.0.nupkg.sha512"
     },
-    "Newtonsoft.Json/11.0.1": {
+    "Newtonsoft.Json/13.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-pNN4l+J6LlpIvHOeNdXlwxv39NPJ2B5klz+Rd2UQZIx30Squ5oND1Yy3wEAUoKn0GPUj6Yxt9lxlYWQqfZcvKg==",
-      "path": "newtonsoft.json/11.0.1",
-      "hashPath": "newtonsoft.json.11.0.1.nupkg.sha512"
+      "sha512": "sha512-ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+      "path": "newtonsoft.json/13.0.1",
+      "hashPath": "newtonsoft.json.13.0.1.nupkg.sha512"
     },
     "System.Collections.Immutable/6.0.0": {
       "type": "package",
@@ -987,6 +999,13 @@
       "sha512": "sha512-CeWTdRNfRaSh0pm2gDTJFwVaXfTq6Xwv/sA887iwPTneW7oMtMlpvDIO+U60+3GWTB7Aom6oQwv5VZVUhQRdPQ==",
       "path": "system.windows.extensions/4.7.0",
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
+    },
+    "Telegram.Bot/19.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Q16IOitgjGoaJOuqgKQy0FeF+hr/ncmlX2esrhCC7aiyhSX7roYEriWaGAHkQZR8QzbImjFfl4eQh2IxcnOrPg==",
+      "path": "telegram.bot/19.0.0",
+      "hashPath": "telegram.bot.19.0.0.nupkg.sha512"
     },
     "ScheduleReminder.Core/1.0.0": {
       "type": "project",

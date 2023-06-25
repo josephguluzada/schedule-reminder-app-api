@@ -33,6 +33,8 @@ namespace ScheduleReminder.API
 
             builder.Services.AddScoped<IReminderRepository, ReminderRepository>();
             builder.Services.AddScoped<IReminderService, ReminderService>();
+
+            // Reminder Jobs
             builder.Services.AddSingleton(typeof(IReminderJob<>),typeof(ReminderJob<>));
 
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

@@ -1,12 +1,21 @@
 ﻿using ScheduleReminder.Service.Jobs;
 using System.Net.Mail;
 using System.Net;
+using Telegram.Bot;
+using Telegram.Bot.Types;
 
 namespace ScheduleReminder.Service.Helpers;
 
 public class MailAndTelegramSender : IBaseJob
 {
-    public void SendMail(string to,string content)
+    private readonly TelegramBotClient _botClient;
+
+    public MailAndTelegramSender()
+    {
+        _botClient = new TelegramBotClient("6282444709:AAFY0Mh_LqeJ2FPOPXf_CfkDo4YzA-7sKcA");
+    }
+
+    public void SendMail(string to, string content)
     {
         var fromAddress = new MailAddress("yquluzade98@gmail.com");
         var toAddress = new MailAddress(to);
@@ -34,8 +43,8 @@ public class MailAndTelegramSender : IBaseJob
         }
     }
 
-    public void SendTelegram(string to, string content)
+    public async Task SendTelegram(string to, string content)
     {
-
+        await _botClient.SendTextMessageAsync(to, content);
     }
 }
