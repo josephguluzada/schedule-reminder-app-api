@@ -43,8 +43,8 @@ public class MailAndTelegramSender : IBaseJob
         }
     }
 
-    public async Task SendTelegram(string to, string content)
+    public void SendTelegram(string to, string content)
     {
-        await _botClient.SendTextMessageAsync(to, content);
+        _botClient.SendTextMessageAsync(to, content).Wait();
     }
 }

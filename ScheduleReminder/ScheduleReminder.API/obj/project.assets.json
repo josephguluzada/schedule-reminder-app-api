@@ -241,12 +241,12 @@
         },
         "compile": {
           "ref/netcoreapp3.1/Microsoft.Data.SqlClient.dll": {
-            "related": ".pdb;.xml"
+            "related": ".xml;.pdb"
           }
         },
         "runtime": {
           "lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll": {
-            "related": ".pdb;.xml"
+            "related": ".xml;.pdb"
           }
         },
         "runtimeTargets": {
@@ -696,12 +696,12 @@
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Microsoft.OpenApi.dll": {
-            "related": ".pdb;.xml"
+            "related": ".xml;.pdb"
           }
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.OpenApi.dll": {
-            "related": ".pdb;.xml"
+            "related": ".xml;.pdb"
           }
         }
       },
@@ -786,12 +786,12 @@
         },
         "compile": {
           "lib/net6.0/Swashbuckle.AspNetCore.Swagger.dll": {
-            "related": ".pdb;.xml"
+            "related": ".xml;.pdb"
           }
         },
         "runtime": {
           "lib/net6.0/Swashbuckle.AspNetCore.Swagger.dll": {
-            "related": ".pdb;.xml"
+            "related": ".xml;.pdb"
           }
         },
         "frameworkReferences": [
@@ -805,12 +805,12 @@
         },
         "compile": {
           "lib/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {
-            "related": ".pdb;.xml"
+            "related": ".xml;.pdb"
           }
         },
         "runtime": {
           "lib/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {
-            "related": ".pdb;.xml"
+            "related": ".xml;.pdb"
           }
         }
       },
@@ -818,12 +818,12 @@
         "type": "package",
         "compile": {
           "lib/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {
-            "related": ".pdb;.xml"
+            "related": ".xml;.pdb"
           }
         },
         "runtime": {
           "lib/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {
-            "related": ".pdb;.xml"
+            "related": ".xml;.pdb"
           }
         },
         "frameworkReferences": [
@@ -1115,12 +1115,12 @@
         },
         "compile": {
           "lib/net6.0/Telegram.Bot.dll": {
-            "related": ".pdb;.xml"
+            "related": ".xml;.pdb"
           }
         },
         "runtime": {
           "lib/net6.0/Telegram.Bot.dll": {
-            "related": ".pdb;.xml"
+            "related": ".xml;.pdb"
           }
         }
       },
@@ -2847,19 +2847,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\asus\\.nuget\\packages\\": {}
+    "C:\\Users\\equlu\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\asus\\Desktop\\schedule-reminder-app\\ScheduleReminder\\ScheduleReminder.API\\ScheduleReminder.API.csproj",
+      "projectUniqueName": "C:\\Users\\equlu\\OneDrive\\Masaüstü\\schedule-reminder-app\\ScheduleReminder\\ScheduleReminder.API\\ScheduleReminder.API.csproj",
       "projectName": "ScheduleReminder.API",
-      "projectPath": "C:\\Users\\asus\\Desktop\\schedule-reminder-app\\ScheduleReminder\\ScheduleReminder.API\\ScheduleReminder.API.csproj",
-      "packagesPath": "C:\\Users\\asus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\asus\\Desktop\\schedule-reminder-app\\ScheduleReminder\\ScheduleReminder.API\\obj\\",
+      "projectPath": "C:\\Users\\equlu\\OneDrive\\Masaüstü\\schedule-reminder-app\\ScheduleReminder\\ScheduleReminder.API\\ScheduleReminder.API.csproj",
+      "packagesPath": "C:\\Users\\equlu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\equlu\\OneDrive\\Masaüstü\\schedule-reminder-app\\ScheduleReminder\\ScheduleReminder.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\equlu\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2867,14 +2867,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\asus\\Desktop\\schedule-reminder-app\\ScheduleReminder\\ScheduleReminder.Service\\ScheduleReminder.Service.csproj": {
-              "projectPath": "C:\\Users\\asus\\Desktop\\schedule-reminder-app\\ScheduleReminder\\ScheduleReminder.Service\\ScheduleReminder.Service.csproj"
+            "C:\\Users\\equlu\\OneDrive\\Masaüstü\\schedule-reminder-app\\ScheduleReminder\\ScheduleReminder.Service\\ScheduleReminder.Service.csproj": {
+              "projectPath": "C:\\Users\\equlu\\OneDrive\\Masaüstü\\schedule-reminder-app\\ScheduleReminder\\ScheduleReminder.Service\\ScheduleReminder.Service.csproj"
             }
           }
         }
@@ -2923,7 +2924,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
       }
     }
   }

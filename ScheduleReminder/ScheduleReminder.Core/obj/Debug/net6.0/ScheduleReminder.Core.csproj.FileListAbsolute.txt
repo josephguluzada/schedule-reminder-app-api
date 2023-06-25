@@ -22,3 +22,15 @@ C:\Users\asus\Desktop\schedule-reminder-app\ScheduleReminder\ScheduleReminder.Co
 C:\Users\asus\Desktop\schedule-reminder-app\ScheduleReminder\ScheduleReminder.Core\obj\Debug\net6.0\refint\ScheduleReminder.Core.dll
 C:\Users\asus\Desktop\schedule-reminder-app\ScheduleReminder\ScheduleReminder.Core\obj\Debug\net6.0\ScheduleReminder.Core.pdb
 C:\Users\asus\Desktop\schedule-reminder-app\ScheduleReminder\ScheduleReminder.Core\obj\Debug\net6.0\ref\ScheduleReminder.Core.dll
+C:\Users\equlu\OneDrive\Masaüstü\schedule-reminder-app\ScheduleReminder\ScheduleReminder.Core\bin\Debug\net6.0\ScheduleReminder.Core.deps.json
+C:\Users\equlu\OneDrive\Masaüstü\schedule-reminder-app\ScheduleReminder\ScheduleReminder.Core\bin\Debug\net6.0\ScheduleReminder.Core.dll
+C:\Users\equlu\OneDrive\Masaüstü\schedule-reminder-app\ScheduleReminder\ScheduleReminder.Core\bin\Debug\net6.0\ScheduleReminder.Core.pdb
+C:\Users\equlu\OneDrive\Masaüstü\schedule-reminder-app\ScheduleReminder\ScheduleReminder.Core\obj\Debug\net6.0\ScheduleReminder.Core.csproj.AssemblyReference.cache
+C:\Users\equlu\OneDrive\Masaüstü\schedule-reminder-app\ScheduleReminder\ScheduleReminder.Core\obj\Debug\net6.0\ScheduleReminder.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\equlu\OneDrive\Masaüstü\schedule-reminder-app\ScheduleReminder\ScheduleReminder.Core\obj\Debug\net6.0\ScheduleReminder.Core.AssemblyInfoInputs.cache
+C:\Users\equlu\OneDrive\Masaüstü\schedule-reminder-app\ScheduleReminder\ScheduleReminder.Core\obj\Debug\net6.0\ScheduleReminder.Core.AssemblyInfo.cs
+C:\Users\equlu\OneDrive\Masaüstü\schedule-reminder-app\ScheduleReminder\ScheduleReminder.Core\obj\Debug\net6.0\ScheduleReminder.Core.csproj.CoreCompileInputs.cache
+C:\Users\equlu\OneDrive\Masaüstü\schedule-reminder-app\ScheduleReminder\ScheduleReminder.Core\obj\Debug\net6.0\ScheduleReminder.Core.dll
+C:\Users\equlu\OneDrive\Masaüstü\schedule-reminder-app\ScheduleReminder\ScheduleReminder.Core\obj\Debug\net6.0\refint\ScheduleReminder.Core.dll
+C:\Users\equlu\OneDrive\Masaüstü\schedule-reminder-app\ScheduleReminder\ScheduleReminder.Core\obj\Debug\net6.0\ScheduleReminder.Core.pdb
+C:\Users\equlu\OneDrive\Masaüstü\schedule-reminder-app\ScheduleReminder\ScheduleReminder.Core\obj\Debug\net6.0\ref\ScheduleReminder.Core.dll
