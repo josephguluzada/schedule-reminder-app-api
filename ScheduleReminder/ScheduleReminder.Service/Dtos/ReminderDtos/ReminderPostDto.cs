@@ -1,4 +1,7 @@
 ﻿using FluentValidation;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
+using System.Runtime.Serialization;
 
 namespace ScheduleReminder.Service.Dtos.ReminderDtos;
 

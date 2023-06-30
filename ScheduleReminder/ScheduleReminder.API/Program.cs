@@ -21,6 +21,13 @@ namespace ScheduleReminder.API
 
             // Add services to the container.
 
+            builder.Services.AddCors(options =>
+            {
+                options.AddDefaultPolicy(policy =>
+                {
+                    policy.WithOrigins("http://localhost:3000").AllowAnyHeader().AllowAnyMethod();
+                });
+            });
             builder.Services.AddHangfire(x => x.UseSqlServerStorage(builder.Configuration.GetConnectionString("hangfireDb")));
             builder.Services.AddHangfireServer();
             builder.Services.AddControllers()
@@ -56,6 +63,7 @@ namespace ScheduleReminder.API
 
             // Global exception handler.
             app.AddGlobalExceptionHandlerService();
+            app.UseCors();
 
             app.UseHttpsRedirection();
 
