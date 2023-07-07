@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\equlu\\.nuget\\packages\\": {}
+    "C:\\Users\\asus\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\equlu\\OneDrive\\Masaüstü\\schedule-reminder-app\\ScheduleReminder\\ScheduleReminder.Core\\ScheduleReminder.Core.csproj",
+      "projectUniqueName": "C:\\Users\\asus\\Desktop\\schedule-reminder-app\\ScheduleReminder\\ScheduleReminder.Core\\ScheduleReminder.Core.csproj",
       "projectName": "ScheduleReminder.Core",
-      "projectPath": "C:\\Users\\equlu\\OneDrive\\Masaüstü\\schedule-reminder-app\\ScheduleReminder\\ScheduleReminder.Core\\ScheduleReminder.Core.csproj",
-      "packagesPath": "C:\\Users\\equlu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\equlu\\OneDrive\\Masaüstü\\schedule-reminder-app\\ScheduleReminder\\ScheduleReminder.Core\\obj\\",
+      "projectPath": "C:\\Users\\asus\\Desktop\\schedule-reminder-app\\ScheduleReminder\\ScheduleReminder.Core\\ScheduleReminder.Core.csproj",
+      "packagesPath": "C:\\Users\\asus\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\asus\\Desktop\\schedule-reminder-app\\ScheduleReminder\\ScheduleReminder.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\equlu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -61,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }
